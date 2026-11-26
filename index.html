@@ -33,6 +33,7 @@
         <a class="wordmark" href="#top" aria-label="Joe Brijs, back to top">Joe Brijs</a>
         <nav class="nav" aria-label="Main">
           <ul class="nav-links">
+            <li class="nav-indicator" aria-hidden="true"></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#about">About</a></li>
@@ -53,8 +54,8 @@
       <!-- Hero -->
       <section class="hero">
         <div class="container hero-grid">
-          <div class="reveal">
-            <div class="hero-byline">
+          <div>
+            <div class="hero-byline load" style="--d: 0s">
               <img src="docs/assets/portrait.jpg" alt="" aria-hidden="true" width="800" height="1000" />
               <div>
                 <span class="byline-name">Joe Brijs</span>
@@ -62,15 +63,15 @@
                 <span class="byline-place">BS &amp; MS from Utah State</span>
               </div>
             </div>
-            <h1 class="hero-title">
+            <h1 class="hero-title load" style="--d: 0.08s">
               Building <em>software that builds software.</em>
             </h1>
-            <p class="hero-lede">
+            <p class="hero-lede load" style="--d: 0.5s">
               I work on international returns at <a class="org-link" href="https://redo.com" target="_blank" rel="noopener">Redo<svg viewBox="4.2 4.2 7.6 7.6" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a>, a Series B e&#8209;commerce startup,
               where I build carrier integrations, customs systems, and the agents that
               keep them running.
             </p>
-            <div class="hero-actions">
+            <div class="hero-actions load" style="--d: 0.62s">
               <a class="btn btn-primary" href="docs/assets/Portfolio_Resume.pdf" target="_blank" rel="noopener">
                 View resume
                 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg>
@@ -85,7 +86,7 @@
               </a>
             </div>
           </div>
-          <figure class="portrait reveal">
+          <figure class="portrait load" style="--d: 0.2s">
             <img src="docs/assets/portrait.jpg" alt="Portrait of Joe Brijs" width="800" height="1000" />
           </figure>
         </div>
