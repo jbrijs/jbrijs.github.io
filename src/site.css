@@ -887,3 +887,62 @@ a {
 .toolkit {
   margin-top: 32px;
 }
+
+/* ---------- Hero byline ---------- */
+.hero-byline {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 28px;
+}
+
+.hero-byline img {
+  display: none;
+}
+
+.hero-byline div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  line-height: 1.35;
+}
+
+.byline-name {
+  display: none;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.byline-place {
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* On mobile the big portrait is hidden, so a small one joins the byline. */
+@media (max-width: 900px) {
+  .portrait {
+    display: none;
+  }
+
+  .byline-name {
+    display: block;
+  }
+
+  .hero-byline img {
+    display: block;
+    width: 64px;
+    height: 64px;
+    border-radius: 999px;
+    object-fit: cover;
+    object-position: 50% 22%;
+    background: var(--surface);
+    flex: none;
+  }
+
+  .hero {
+    padding-top: 40px;
+  }
+}
