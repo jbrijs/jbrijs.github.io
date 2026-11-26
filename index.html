@@ -2,604 +2,397 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joe Brijs Portfolio</title>
-    <link rel="icon" href="docs/assets/favicon.ico" />
-    <link href="src/output.css" rel="stylesheet" />
-    <script src="src/index.js" defer></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap"
-      rel="stylesheet"
+    <title>Joe Brijs — Software Engineer</title>
+    <meta
+      name="description"
+      content="Joe Brijs is a software engineer at Redo building international returns infrastructure and the autonomous agents that keep it running."
     />
+    <meta property="og:title" content="Joe Brijs — Software Engineer" />
+    <meta
+      property="og:description"
+      content="Software engineer building international returns infrastructure and self-healing agent systems."
+    />
+    <meta property="og:image" content="https://www.joebrijs.dev/docs/assets/portrait.jpg" />
+    <meta name="theme-color" content="#faf9f5" />
+    <link rel="icon" href="docs/assets/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&display=swap"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
+    <link rel="stylesheet" href="src/site.css" />
+    <script src="src/site.js" defer></script>
   </head>
-  <body class="bg-background top-14 w-full">
-    <nav
-      class="bg-background h-14 flex flex-row justify-between w-full shadow-xl items-center fixed z-10"
-      id="navbar"
-      data-hidden="false"
-      role="navigation"
-      aria-label="Main Navigation"
-    >
-      <span class="hidden sm:block text-green-300 text-3xl pl-4">JB</span>
-      <div class="hamburger-icon">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="#top" aria-label="Joe Brijs, back to top">Joe Brijs</a>
+        <nav class="nav" aria-label="Main">
+          <ul class="nav-links">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="mobile-only">
+              <a href="docs/assets/Portfolio_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+            </li>
+          </ul>
+          <a class="btn btn-ghost btn-sm" href="docs/assets/Portfolio_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+          <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+          </button>
+        </nav>
       </div>
-      <ul
-        class="flex flex-row w-full sm:w-2/3 justify-around sm:justify-end sm:gap-10 pr-6"
-      >
-        <li>
-          <a class="text-sky-300 text-xl font-light" href="#home">Home</a>
-        </li>
-        <li>
-          <a class="text-sky-200 text-xl font-light" href="#projects"
-            >Projects</a
-          >
-        </li>
-        <li>
-          <a class="text-green-200 text-xl font-light" href="#experience"
-            >Experience</a
-          >
-        </li>
-        <li>
-          <a class="text-green-300 text-xl font-light" href="#contact"
-            >Contact</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <section
-      class="flex flex-row h-screen w-full items-start sm:items-center justify-center text-white sm:mt-36 mt-72"
-      id="home"
-    >
-      <div class="w-full flex flex-row">
-        <div class="pl-12 sm:pl-16 md:pl-24 flex-col w-2/3">
-          <p
-            class="max-w-prose pb-4 text-6xl md:text-8xl lg:text-9xl w-full font-semibold flex-start bg-gradient-to-r from-sky-300 to-green-300 text-transparent bg-clip-text inline-block"
-          >
-            Joe Brijs
-          </p>
-          <p
-            class="text-lg text-nowrap sm:text-3xl md:text-4xl font-normal start text-left bg-gradient-to-r from-sky-300 to-green-300 text-transparent bg-clip-text inline-block"
-          >
-            Software Engineer and CS Student
-          </p>
-          <p
-            class="md:max-w-prose text- pt-2 pb-4 text-md sm:text-xl md:text-2xl font-light"
-          >
-            Software Engineer | Student at Utah State University
-          </p>
-          <span class="flex flex-row items-center gap-4">
-            <a href="https://www.linkedin.com/in/joe-brijs/" target="_blank">
-              <i class="devicon-linkedin-plain text-5xl"></i>
-            </a>
-            <a href="https://github.com/jbrijs" target="_blank">
-              <i class="devicon-github-original text-5xl text-white"></i>
-            </a>
-            <a
-              class="bg-white py-2 px-4 rounded-lg w-auto text-background flex items-center font-semibold text-xl"
-              href="./docs/assets/Portfolio_Resume.pdf"
-              target="_blank"
-              >Resume<span class="material-symbols-outlined">
-                download
-              </span></a
-            >
-          </span>
-        </div>
-      </div>
-    </section>
-    <section class="h-auto w-full pb-20 bg-gray-700" id="projects">
-      <h1
-        class="text-green-200 text-4xl md:text-7xl bg-gradient-to-r from-sky-300 to-green-300 text-transparent bg-clip-text inline-block md:py-10 p-4 md:px-24"
-      >
-        Projects
-      </h1>
-      <div
-        class="md:grid grid-cols-2 lg:grid-cols-3 p-4 md:p-10 gap-6 flex flex-col"
-      >
-        <div
-          class="bg-gray-800 h-auto rounded-xl p-6 md:p-10 relative z-1 shadow-2xl col-span-1 flex flex-col items-start justify-between"
-          id="ai-project"
-        >
-          <div>
-            <h2 class="text-sky-200 md:text-4xl text-3xl">
-              Neural Network Stock Predictor Web App
-            </h2>
-            <h3 class="pt-3 text-green-200 text-xl font-semibold">Overview</h3>
-            <p class="text-slate-300 text-lg pt-3">
-              This project involved developing a system to predict stock prices
-              using deep learning and cloud services. It collects historical
-              stock price data, engineers key financial indicators, and stores
-              the processed data in
-              <span class="text-sky-400 font-bold">Amazon S3</span> for easy
-              access. I trained LSTM neural networks using
-              <span class="text-sky-400 font-bold">PyTorch</span> to forecast
-              next-day stock prices for leading tech companies, providing timely
-              insights. The pipeline includes
-              <span class="text-sky-400 font-bold">AWS Lambda</span> functions
-              that automatically fetch new data and trigger predictions after
-              market hours, managed by
-              <span class="text-sky-400 font-bold">AWS EventBridge</span> Cron
-              jobs for consistent updates. Predictions are accessible via API
-              endpoints hosted on AWS Lambda and managed through
-              <span class="text-sky-400 font-bold">API Gateway</span>, enabling
-              real-time comparisons with actual prices. The frontend is a
-              dynamic <span class="text-sky-400 font-bold">React</span> web app
-              displaying stock predictions and performance metrics, hosted on
-              AWS S3, distributed via
-              <span class="text-sky-400 font-bold">CloudFront</span>, and
-              utilizing <span class="text-sky-400 font-bold">Route 53</span> for
-              DNS management.
-            </p>
-          </div>
-          <div class="w-full flex flex-col items-center justify-center">
-            <div class="w-full flex flex-col items-start justify-start">
-              <h4 class="py-4 font-semibold text-2xl text-green-200">
-                Technologies:
-              </h4>
-              <div class="flex items-center gap-4 pb-10">
-                <i
-                  class="devicon-amazonwebservices-plain-wordmark colored"
-                  style="font-size: xxx-large"
-                ></i>
-                <i
-                  class="devicon-pytorch-original colored"
-                  style="font-size: xxx-large"
-                ></i>
-                <i
-                  class="devicon-react-original colored"
-                  style="font-size: xxx-large"
-                ></i>
-                <i
-                  class="devicon-python-plain colored"
-                  style="font-size: xxx-large"
-                ></i>
-                <i
-                  class="devicon-docker-plain colored"
-                  style="font-size: xxx-large"
-                ></i>
-              </div>
-            </div>
-            <div class="w-full flex flex-col gap-2">
-              <a
-                class="text-black flex items-center justify-center text-xl h-16 bg-slate-300 w-full rounded-lg transition-all duration-200 ease-in-out"
-                href="https://faangfinance.com"
-                target="_blank"
-              >
-                <span class="pr-2 font-semibold">www.faangfinance.com</span>
-                <span
-                  class="material-symbols-outlined"
-                  style="color: black; font-size: x-large"
-                >
-                  exit_to_app
-                </span>
-              </a>
-              <a
-                class="text-white flex items-center justify-center text-xl h-16 bg-background w-full rounded-lg"
-                href="https://github.com/jbrijs/faang-finance"
-                target="_blank"
-              >
-                <i
-                  class="devicon-github-original text-3xl text-white pl-4 pr-2"
-                ></i>
-                <span class="pr-2">GitHub Repo</span>
-                <span
-                  class="material-symbols-outlined"
-                  style="color: white; font-size: x-large"
-                >
-                  exit_to_app
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="bg-gray-800 h-auto rounded-xl p-6 md:p-10 relative z-1 shadow-2xl col-span-1 flex flex-col items-start justify-between"
-          id="ai-project"
-        >
-          <div>
-            <h2 class="text-sky-200 md:text-4xl text-3xl">
-              AI Workout Plan Web App
-            </h2>
-            <h3 class="pt-3 text-green-200 text-xl font-semibold">Overview</h3>
-            <p class="text-slate-300 text-lg pt-3">
-              This web application enables users to input personal information
-              to receive customized workout plans. Users can track and store
-              their workout progress directly within the app. The project
-              utilizes <span class="text-sky-400 font-bold">React.js</span> for
-              the frontend, is styled with
-              <span class="text-sky-400 font-bold">TailwindCSS</span>, uses
-              <span class="text-sky-400 font-bold">Django</span> for the
-              backend, and integrates the OpenAI API to dynamically generate
-              personalized workout recommendations.
-            </p>
-          </div>
-          <div class="w-full flex flex-col items-center justify-center">
-            <div class="w-full flex flex-col items-start justify-start">
-              <h4 class="py-4 font-semibold text-2xl text-green-200">
-                Technologies:
-              </h4>
-              <div class="flex items-center gap-4 pb-10">
-                <i
-                  class="devicon-react-original colored"
-                  style="font-size: xxx-large"
-                ></i>
-                <i
-                  class="devicon-django-plain text-green-500"
-                  style="font-size: xxx-large"
-                ></i>
-                <i
-                  class="devicon-tailwindcss-original colored"
-                  style="font-size: xxx-large"
-                ></i>
-              </div>
-            </div>
-            <a
-              class="text-white flex items-center justify-center text-xl h-16 bg-background w-full rounded-lg"
-              href="https://github.com/jbrijs/swole-ai"
-              target="_blank"
-            >
-              <i
-                class="devicon-github-original text-3xl text-white pl-4 pr-2"
-              ></i>
-              <span class="pr-2">GitHub Repo</span>
-              <span
-                class="material-symbols-outlined"
-                style="color: white; font-size: x-large"
-              >
-                exit_to_app
-              </span>
-            </a>
-          </div>
-        </div>
-        <div
-          class="bg-gray-800 h-auto rounded-xl p-6 md:p-10 relative z-1 shadow-2xl col-span-1 flex flex-col items-start justify-between"
-          id="habit-project"
-        >
-          <div>
-            <h2 class="text-sky-200 md:text-4xl text-3xl">
-              Habit Tracker Android App
-            </h2>
-            <h3 class="pt-3 text-green-200 text-xl font-semibold">Overview</h3>
-            <p class="text-slate-300 text-lg pt-3">
-              The Habit Tracker Android App, built with
-              <span class="text-sky-400 font-bold">Kotlin</span> and
-              <span class="text-sky-400 font-bold">Jetpack Compose</span>,
-              enables users to track 'do' and 'don't' habits seamlessly.
-              Featuring intuitive gestures, smooth transitions, and engaging
-              animations, this app offers a robust mobile experience. Habits are
-              saved persistently across sessions through
-              <span class="text-sky-400 font-bold">Firebase</span> integration.
-              Additionally, the implementation of Google Ads enhances the app's
-              realism and functionality.
-            </p>
-          </div>
-          <div class="w-full flex flex-col items-center justify-center">
-            <div class="w-full flex flex-col items-start justify-start">
-              <h4 class="py-4 font-semibold text-2xl text-green-200">
-                Technologies:
-              </h4>
-              <div class="flex items-center gap-4 pb-10">
-                <i
-                  class="devicon-kotlin-plain colored"
-                  style="font-size: xxx-large"
-                ></i>
-                <i
-                  class="devicon-jetpackcompose-plain-wordmark colored"
-                  style="font-size: xxx-large"
-                ></i>
-                <i
-                  class="devicon-firebase-plain colored"
-                  style="font-size: xxx-large"
-                ></i>
-                <i
-                  class="devicon-androidstudio-plain text-green-500"
-                  style="font-size: xxx-large"
-                ></i>
-              </div>
-            </div>
-            <a
-              class="text-white flex items-center justify-center text-xl h-16 bg-background w-full rounded-lg"
-              href="https://github.com/jbrijs/habit-tracker"
-              target="_blank"
-            >
-              <i
-                class="devicon-github-original text-3xl text-white pl-4 pr-2"
-              ></i>
-              <span class="pr-2">GitHub Repo</span>
-              <span
-                class="material-symbols-outlined"
-                style="color: white; font-size: x-large"
-              >
-                exit_to_app
-              </span>
-            </a>
-          </div>
-        </div>
+    </header>
 
-        <div
-          class="bg-gray-800 h-auto rounded-xl p-6 md:p-10 relative z-1 shadow-2xl col-span-1 flex flex-col items-start justify-between"
-          id="typing-project"
-        >
-          <div>
-            <h2 class="text-sky-200 md:text-4xl text-3xl">Typing Tutor Game</h2>
-            <h3 class="pt-3 text-green-200 text-xl font-semibold">Overview</h3>
-            <p class="text-slate-300 text-lg pt-3">
-              The Typing Tutor Game is an interactive, front-end-only typing
-              game built using
-              <span class="text-sky-400 font-bold">React.js</span> with
-              <span class="text-sky-400 font-bold">TypeScript</span>. The game
-              enhances user engagement through reactive colors and animations
-              that indicate which key to press and confirm the key pressed,
-              helping users to memorize key positions. Additionally, a cursor
-              and prompt animation visually track and highlight the user's
-              progress throughout the game. This game is intuitive and visually
-              appealing.
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="reveal">
+            <p class="eyebrow">Draper, Utah</p>
+            <h1 class="hero-title">
+              Software engineer at <a class="org-link" href="https://redo.com" target="_blank" rel="noopener">Redo<svg viewBox="4.2 4.2 7.6 7.6" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a>, building <em>software that builds software.</em>
+            </h1>
+            <p class="hero-lede">
+              I work on international returns at <a class="org-link" href="https://redo.com" target="_blank" rel="noopener">Redo<svg viewBox="4.2 4.2 7.6 7.6" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a>, a Series B e&#8209;commerce startup,
+              where I build carrier integrations, customs systems, and the agents that
+              keep them running. I hold a B.S. and M.S. in Computer Science from Utah
+              State University.
             </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="docs/assets/Portfolio_Resume.pdf" target="_blank" rel="noopener">
+                View resume
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg>
+              </a>
+              <a class="btn btn-ghost" href="https://github.com/jbrijs" target="_blank" rel="noopener">
+                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z" /></svg>
+                GitHub
+              </a>
+              <a class="btn btn-ghost" href="https://www.linkedin.com/in/joe-brijs/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M0 1.15C0 .52.52 0 1.17 0h13.66C15.48 0 16 .52 16 1.15v13.7c0 .63-.52 1.15-1.17 1.15H1.17C.52 16 0 15.48 0 14.85V1.15Zm4.94 12.24V6.17H2.54v7.22h2.4ZM3.74 5.18c.84 0 1.36-.55 1.36-1.25-.01-.71-.52-1.25-1.34-1.25-.82 0-1.36.54-1.36 1.25 0 .7.52 1.25 1.33 1.25h.01Zm4.91 8.21V9.36c0-.22.02-.43.08-.59.17-.43.57-.88 1.23-.88.87 0 1.21.66 1.21 1.63v3.87h2.4V9.25c0-2.22-1.18-3.25-2.76-3.25-1.28 0-1.85.7-2.17 1.19v.03h-.02l.02-.03V6.17h-2.4c.03.68 0 7.22 0 7.22h2.4Z" /></svg>
+                LinkedIn
+              </a>
+            </div>
           </div>
-          <div class="w-full flex flex-col items-center justify-center">
-            <div class="w-full flex flex-col items-start justify-start">
-              <h4 class="py-4 font-semibold text-2xl text-green-200">
-                Technologies:
-              </h4>
-              <div class="flex items-center gap-4 pb-10">
-                <i
-                  class="devicon-react-original colored"
-                  style="font-size: xxx-large"
-                ></i>
-                <i
-                  class="devicon-typescript-plain colored"
-                  style="font-size: xxx-large"
-                ></i>
-                <i
-                  class="devicon-tailwindcss-original colored"
-                  style="font-size: xxx-large"
-                ></i>
+          <figure class="portrait reveal">
+            <img src="docs/assets/portrait.jpg" alt="Portrait of Joe Brijs" width="800" height="1000" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- Impact -->
+      <div class="container">
+        <p class="eyebrow impact-label reveal">Impact at Redo</p>
+        <div class="impact reveal" aria-label="Impact at Redo">
+          <div class="stat">
+            <p class="stat-value">$250K+</p>
+            <p class="stat-label">Annual margin captured by market-rate pricing for international labels</p>
+          </div>
+          <div class="stat">
+            <p class="stat-value">2.5x</p>
+            <p class="stat-label">International returns revenue growth in 7 months</p>
+          </div>
+          <div class="stat">
+            <p class="stat-value">5x</p>
+            <p class="stat-label">Fewer customs delays on international returns</p>
+          </div>
+          <div class="stat">
+            <p class="stat-value">200+</p>
+            <p class="stat-label">Failed return labels recovered by a self-healing agent</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <section class="section" id="work" style="border-top: 0">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Experience</p>
+            <h2 class="section-title">Where I've worked</h2>
+          </div>
+          <ol class="roles">
+            <li class="role reveal">
+              <div class="role-when">Apr 2026 — Present</div>
+              <div>
+                <h3 class="role-title">Software Engineer I</h3>
+                <p class="role-org"><a class="org-link" href="https://redo.com" target="_blank" rel="noopener">Redo<svg viewBox="4.2 4.2 7.6 7.6" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a> · Series B, high-growth e&#8209;commerce startup · Draper, Utah</p>
+                <p class="role-summary">I work on international returns, the part of Redo that lets a shopper in London or Sydney send a product back to a merchant in another country. I've been one of two engineers on it, and the only one for four months, while the business grew <strong>2.5x</strong>. Much of that growth runs on lanes and features I built.</p>
+                <details class="role-more" open>
+                  <summary><span class="more-closed">Read more</span><span class="more-open">Show less</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 3v10M3 8h10" /></svg></summary>
+                  <div class="role-detail">
+                    <div class="role-topic">
+                      <h4>Pricing that pays for itself</h4>
+                      <p>International labels used to be passed through near carrier cost. I designed a market-rate pricing model, with rate cards by package weight and destination country, that now captures <strong>$250K+ a year</strong> in margin Redo was leaving on the table.</p>
+                    </div>
+                    <div class="role-topic">
+                      <h4>Getting returns through customs</h4>
+                      <p>Half of our international returns were getting held at the border. I built one system that prepares every customs declaration: real HS codes, honest countries of origin, importer and shopper tax IDs, and duties-paid terms. Every carrier now receives the same correct paperwork. Customs delays fell from <strong>50% to 10%</strong>.</p>
+                    </div>
+                    <div class="role-topic">
+                      <h4>Opening new lanes</h4>
+                      <p>I integrated 10+ carrier APIs across the UK, EU, Canada, Australia, and New Zealand. That ranged from European parcel networks to carrier-collected pickups for bulky items, each with its own address rules, label formats, and failure modes.</p>
+                    </div>
+                    <div class="role-topic">
+                      <h4>Labels that fix themselves</h4>
+                      <p>When a carrier rejects a label, an LLM agent proposes a corrected address, a deterministic safety gate checks the change against reference data, and the label is bought on retry. That has recovered <strong>200+ failed labels</strong>. A second agent studies the failures it can't fix, traces them to a root cause, and opens a code fix for review: <strong>25</strong> so far.</p>
+                    </div>
+                    <div class="role-topic">
+                      <h4>A fleet of agents</h4>
+                      <p>Beyond labels, I run autonomous agents that triage production alerts, investigate root causes, and implement customs features. They do the legwork and hand me well-tested merge requests. Every change still gets human review.</p>
+                    </div>
+                    <ul class="tags role-stack"><li class="tag">TypeScript</li><li class="tag">Temporal</li><li class="tag">CockroachDB</li><li class="tag">Datadog</li><li class="tag">LLM agents</li><li class="tag">MCP</li></ul>
+                  </div>
+                </details>
               </div>
-            </div>
-            <a
-              class="text-white flex items-center justify-center text-xl h-16 bg-background w-full rounded-lg"
-              href="https://github.com/jbrijs/react-typing-tutor"
-              target="_blank"
-            >
-              <i
-                class="devicon-github-original text-3xl text-white pl-4 pr-2"
-              ></i>
-              <span class="pr-2">GitHub Repo</span>
-              <span
-                class="material-symbols-outlined"
-                style="color: white; font-size: x-large"
-              >
-                exit_to_app
-              </span>
-            </a>
+            </li>
+            <li class="role reveal">
+              <div class="role-when">Oct 2025 — May 2026</div>
+              <div>
+                <h3 class="role-title">Co-Founder and Software Engineer</h3>
+                <p class="role-org"><a class="org-link" href="https://altobm.com" target="_blank" rel="noopener">Alto<svg viewBox="4.2 4.2 7.6 7.6" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a> · AI brand monitoring startup · Logan, Utah</p>
+                <p class="role-summary">I co-founded Alto to help marketing teams see how their brand shows up inside AI answers on ChatGPT, Gemini, and Claude, and built the product end to end.</p>
+                <details class="role-more">
+                  <summary><span class="more-closed">Read more</span><span class="more-open">Show less</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 3v10M3 8h10" /></svg></summary>
+                  <div class="role-detail">
+                    <div class="role-topic">
+                      <h4>The pipeline</h4>
+                      <p>A multi-service backend in Rust and Python that runs scheduled LLM queries across the major AI platforms and stores the answers in a Postgres analytics layer. It's deployed with Docker Compose, with CI/CD on GitHub Actions.</p>
+                    </div>
+                    <div class="role-topic">
+                      <h4>Turning answers into insight</h4>
+                      <p>A Rust batch-embedding pipeline feeds semantic search, and a LangChain multi-tool agent uses it to generate targeted recommendations for improving a brand's AI presence.</p>
+                    </div>
+                    <div class="role-topic">
+                      <h4>Getting it in front of customers</h4>
+                      <p>A React dashboard surfaces brand visibility KPIs. We onboarded <strong>3 marketing teams</strong> to a trial.</p>
+                    </div>
+                    <ul class="tags role-stack"><li class="tag">Rust</li><li class="tag">Python</li><li class="tag">PostgreSQL</li><li class="tag">LangChain</li><li class="tag">React</li><li class="tag">Docker</li></ul>
+                  </div>
+                </details>
+              </div>
+            </li>
+            <li class="role reveal">
+              <div class="role-when">Nov 2024 — Mar 2025</div>
+              <div>
+                <h3 class="role-title">Software Developer and Research Assistant</h3>
+                <p class="role-org"><a class="org-link" href="https://aspire.usu.edu" target="_blank" rel="noopener">USU ASPIRE Lab<svg viewBox="4.2 4.2 7.6 7.6" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a> · Utah State University · Logan, Utah</p>
+                <p class="role-summary">At Utah State's NSF-funded ASPIRE research center, I worked on the software side of electrifying transit, focused on Utah Transit Authority's electric bus depots.</p>
+                <details class="role-more">
+                  <summary><span class="more-closed">Read more</span><span class="more-open">Show less</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 3v10M3 8h10" /></svg></summary>
+                  <div class="role-detail">
+                    <div class="role-topic">
+                      <h4>Smarter charging</h4>
+                      <p>A Rust program that optimizes charger efficiency at a depot to cut peak energy demand, projected to lower energy costs by <strong>25%</strong>.</p>
+                    </div>
+                    <div class="role-topic">
+                      <h4>Seeing the depot clearly</h4>
+                      <p>An analytics pipeline and dashboard that show depot operators energy cost, usage, and peak pricing at a glance.</p>
+                    </div>
+                    <div class="role-topic">
+                      <h4>Simulation and modeling</h4>
+                      <p>An EV charger simulator in Rust that supports offline and live runs of many charge points over the Open Charge Point Protocol (OCPP), plus data analysis and ML models for predicting bus energy use.</p>
+                    </div>
+                    <ul class="tags role-stack"><li class="tag">Rust</li><li class="tag">Python</li><li class="tag">pandas</li><li class="tag">scikit-learn</li><li class="tag">React</li></ul>
+                  </div>
+                </details>
+              </div>
+            </li>
+            <li class="role reveal">
+              <div class="role-when">May 2024 — Nov 2024</div>
+              <div>
+                <h3 class="role-title">Software Engineer Intern</h3>
+                <p class="role-org"><a class="org-link" href="https://elektrikapp.com" target="_blank" rel="noopener">Elektrik<svg viewBox="4.2 4.2 7.6 7.6" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a> · Medium-voltage equipment startup · Lindon, Utah</p>
+                <p class="role-summary">An early-stage B2B startup selling medium-voltage electrical equipment. I worked across Rust backend services and the frontend, and made real product decisions along the way.</p>
+                <details class="role-more">
+                  <summary><span class="more-closed">Read more</span><span class="more-open">Show less</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 3v10M3 8h10" /></svg></summary>
+                  <div class="role-detail">
+                    <div class="role-topic">
+                      <h4>Finding the right part</h4>
+                      <p>Search tools for medium-voltage accessories, built by parsing manufacturer datasheets into structured part data. They contributed to a <strong>25%</strong> year-over-year revenue increase.</p>
+                    </div>
+                    <div class="role-topic">
+                      <h4>Credit in minutes, not days</h4>
+                      <p>An adaptive credit application tailored to business type and payment terms, with Slack-based approvals over GCP Pub/Sub and generated PDFs. It cut turnaround from <strong>days to minutes</strong>.</p>
+                    </div>
+                    <div class="role-topic">
+                      <h4>A leaner frontend</h4>
+                      <p>Helped migrate the app from Angular to React, cutting the frontend codebase by <strong>40%</strong>, and wrote a Rust CLI that standardized MongoDB collections, saving roughly 20 hours of manual cleanup.</p>
+                    </div>
+                    <ul class="tags role-stack"><li class="tag">Rust</li><li class="tag">React</li><li class="tag">Angular</li><li class="tag">MongoDB</li><li class="tag">GCP</li></ul>
+                  </div>
+                </details>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Projects</p>
+            <h2 class="section-title">Things I've built</h2>
+          </div>
+          <div class="projects">
+            <article class="project featured reveal">
+              <p class="project-kicker">High-performance computing</p>
+              <h3 class="project-title">Parallel K-Means Clustering of Spotify Tracks</h3>
+              <p class="project-desc">
+                K-Means in C++ clustering 1.2 million Spotify tracks by genre on
+                high-dimensional audio features. Parallelized with OpenMP shared-memory
+                threading and MPI distributed-memory processes, with results identical
+                to the serial baseline, and benchmarked with strong and weak scaling
+                studies on the University of Utah's CHPC supercomputing cluster.
+              </p>
+              <ul class="tags">
+                <li class="tag">C++</li>
+                <li class="tag">OpenMP</li>
+                <li class="tag">MPI</li>
+                <li class="tag">Python</li>
+              </ul>
+            </article>
+            <article class="project reveal">
+              <p class="project-kicker">Machine learning</p>
+              <h3 class="project-title">Stock Price Neural Network</h3>
+              <p class="project-desc">
+                LSTM models in PyTorch that forecast next-day prices for major tech
+                stocks, fed by a daily AWS Lambda pipeline and served through a React
+                frontend on S3 and CloudFront.
+              </p>
+              <ul class="tags">
+                <li class="tag">PyTorch</li>
+                <li class="tag">AWS</li>
+                <li class="tag">React</li>
+              </ul>
+              <div class="project-links">
+                <a class="project-link" href="https://faangfinance.com" target="_blank" rel="noopener">Live site <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a>
+                <a class="project-link" href="https://github.com/jbrijs/faang-finance" target="_blank" rel="noopener">GitHub <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a>
+              </div>
+            </article>
+            <article class="project reveal">
+              <p class="project-kicker">Full stack · AI</p>
+              <h3 class="project-title">AI Workout Planner</h3>
+              <p class="project-desc">
+                A web app that generates personalized workout plans with the OpenAI
+                API and tracks progress over time. React and Tailwind on the front,
+                Django on the back.
+              </p>
+              <ul class="tags">
+                <li class="tag">React</li>
+                <li class="tag">Django</li>
+                <li class="tag">OpenAI API</li>
+              </ul>
+              <div class="project-links">
+                <a class="project-link" href="https://github.com/jbrijs/swole-ai" target="_blank" rel="noopener">GitHub <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a>
+              </div>
+            </article>
+            <article class="project reveal">
+              <p class="project-kicker">Mobile</p>
+              <h3 class="project-title">Habit Tracker for Android</h3>
+              <p class="project-desc">
+                A Kotlin and Jetpack Compose app for tracking habits to build and
+                habits to break, with gesture-driven interactions and Firebase sync.
+              </p>
+              <ul class="tags">
+                <li class="tag">Kotlin</li>
+                <li class="tag">Jetpack Compose</li>
+                <li class="tag">Firebase</li>
+              </ul>
+              <div class="project-links">
+                <a class="project-link" href="https://github.com/jbrijs/habit-tracker" target="_blank" rel="noopener">GitHub <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a>
+              </div>
+            </article>
+            <article class="project reveal">
+              <p class="project-kicker">Frontend</p>
+              <h3 class="project-title">Typing Tutor</h3>
+              <p class="project-desc">
+                A React and TypeScript typing game that highlights the next key and
+                animates each keystroke to help players learn key positions.
+              </p>
+              <ul class="tags">
+                <li class="tag">React</li>
+                <li class="tag">TypeScript</li>
+              </ul>
+              <div class="project-links">
+                <a class="project-link" href="https://github.com/jbrijs/react-typing-tutor" target="_blank" rel="noopener">GitHub <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a>
+              </div>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="h-auto bg-background px-4 md:px-24 mb-20" id="experience">
-      <h1
-        class="text-green-200 text-4xl md:text-6xl bg-gradient-to-r from-sky-300 to-green-300 text-transparent bg-clip-text inline-block py-10"
-      >
-        Professional Experience
-      </h1>
-      <div class="flex flex-col gap-4" id="experiences">
-        <div class="w-full flex flex-row justify-start">
-          <div
-            class="bg-slate-300 flex flex-col p-4 md:py-6 md:px-10 rounded-lg w-full"
-            id="company-name"
-          >
-            <span class="flex flex-row items-end gap-4">
-              <p class="text-3xl font-semibold">USU ASPIRE Lab</p>
-            </span>
-            <p class="text-xl leading-5 text-gray-600">
-              Student Software Developer and Research Assistant
-            </p>
-            <p class="pt-2 text-gray-500">Nov 2024 - Present</p>
-            <div
-              class="w-full flex flex-col items-start justify-center pt-3 pb-6 gap-2"
-            >
-              <p class="text-black max-w-prose">
-                Working on electric vehicle infrastructure optimization through
-                machine learning and full-stack development at Utah State
-                University's NSF-funded ASPIRE research center.
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="container about-grid">
+          <div class="reveal">
+            <p class="eyebrow">About</p>
+            <h2 class="section-title">Engineering that holds up in production.</h2>
+          </div>
+          <div class="reveal">
+            <div class="about-copy">
+              <p>
+                Most of my work lives where software meets the physical world: carriers,
+                customs, and the addresses shoppers type in. I like problems where the
+                edge cases are the product.
               </p>
-              <ul class="text-black max-w-prose flex flex-col gap-4">
-                <li>
-                  <strong>EV Charger Simulator:</strong>
-                  Developed in Rust to support both offline and live simulations
-                  of multiple charging points simultaneously. Features a
-                  command-line interface and a React.js web application for
-                  interaction. Enables integration with external services via
-                  the Open Charge Point Protocol (OCPP).
-                </li>
-                <li>
-                  <strong>ML and Data Science:</strong>
-                  Perfomed extensive data analysis on EV bus depot charging to
-                  create a highly accurate State of Charge prediction model.
-                  Utillized pandas, numpy, matplotlib, and sklearn.
-                </li>
-                <li>
-                  <strong>Web Application Development:</strong>
-                  Designed and maintained features for an EV reservation
-                  web app using Express/Node.js and React.js, improving user
-                  experience and system reliability.
-                </li>
+              <p>
+                Lately that means building agents that work alongside me. They watch
+                production, fix what they can, and hand me well-tested changes for the
+                rest.
+              </p>
+            </div>
+            <div class="toolkit">
+              <h3>Toolkit</h3>
+              <ul class="tags">
+                <li class="tag">TypeScript</li>
+                <li class="tag">Python</li>
+                <li class="tag">Rust</li>
+                <li class="tag">C++</li>
+                <li class="tag">React</li>
+                <li class="tag">AWS</li>
+                <li class="tag">Docker</li>
+                <li class="tag">PostgreSQL</li>
+                <li class="tag">CockroachDB</li>
+                <li class="tag">Temporal</li>
+                <li class="tag">Datadog</li>
+                <li class="tag">LangChain</li>
+                <li class="tag">MCP</li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="w-full flex flex-row justify-start">
-          <div
-            class="bg-gray-700 flex flex-col p-4 md:py-6 md:px-10 rounded-lg w-full"
-            id="elektrik"
-          >
-            <span class="flex flex-row items-end gap-4"
-              ><p class="text-3xl font-semibold text-white">Elektrik -</p>
-              <p class="text-xl font-normal text-slate-200">
-                Early Stage Start Up, B2B SaaS and Electrical Distributor
-              </p></span
-            >
-            <p class="text-xl leading-5 text-slate-300">
-              Software Engineer - Intern
-            </p>
-            <p class="pt-2 text-slate-400">May 2024 - Nov 2024</p>
-            <div
-              class="w-full flex flex-col items-start justify-center pt-3 pb-6 gap-2"
-            >
-              <p class="text-slate-200 max-w-prose">
-                I worked with Rust in the backend services and React for
-                frontend development. Some of my key contributions included:
-              </p>
-              <ul class="text-slate-200 max-w-prose flex flex-col gap-4">
-                <li>
-                  <strong class="text-slate-50"
-                    >Search Tools for Medium Voltage Accessories:</strong
-                  >
-                  Designed and implemented robust search tools by analyzing
-                  datasheets and integrating part data into the web app. This
-                  contributed to a 25% increase in revenue year-over-year by
-                  improving part discoverability for customers.
-                </li>
-                <li>
-                  <strong class="text-slate-50"
-                    >Credit Application Process Optimization:</strong
-                  >
-                  Reduced the credit application time from days to minutes by
-                  creating an adaptive form tailored to specific business types
-                  and payment terms. Automated submission workflows using Slack
-                  integration via GCP Pub/Sub, generated dynamic PDFs, and
-                  incorporated the entire approval process into the web app
-                  dashboard.
-                </li>
-                <li>
-                  <strong class="text-slate-50"
-                    >Angular to React Migration:</strong
-                  >
-                  Led the successful transition from Angular to React, reducing
-                  the frontend codebase by 40%, enhancing UI/UX, and improving
-                  developer efficiency, which resulted in a more maintainable
-                  and scalable codebase.
-                </li>
-                <li>
-                  <strong class="text-slate-50"
-                    >Rust CLI for Data Standardization:</strong
-                  >
-                  Developed a Rust-based command-line tool to standardize
-                  MongoDB collections, saving an estimated 20 hours of employee
-                  time and improving data consistency.
-                </li>
-                <li>
-                  <strong class="text-slate-50"
-                    >Startup Environment Adaptability:</strong
-                  >
-                  Thrived in a fast-paced, early-stage startup, where I adapted
-                  to evolving requirements, contributed to cross-functional
-                  roles, and made key product and technical decisions that
-                  shaped the company's core offerings.
-                </li>
-              </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="contact reveal">
+            <p class="eyebrow">Contact</p>
+            <h2 class="section-title">Let's talk.</h2>
+            <p>The best way to reach me is on LinkedIn. My resume and code are a click away.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="https://www.linkedin.com/in/joe-brijs/" target="_blank" rel="noopener">Message me on LinkedIn</a>
+              <a class="btn btn-ghost" href="docs/assets/Portfolio_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+              <a class="btn btn-ghost" href="https://github.com/jbrijs" target="_blank" rel="noopener">GitHub</a>
             </div>
           </div>
         </div>
-        <div class="w-full flex flex-row justify-end">
-          <div
-            class="bg-slate-300 flex flex-col p-4 md:py-6 md:px-10 rounded-lg w-full"
-            id="ino"
-          >
-            <span><p class="text-3xl font-semibold">In-N-Out</p></span>
-            <p class="text-xl leading-5 text-gray-600">
-              Associate & Clean-up Crew
-            </p>
-            <p class="pt-2 text-gray-500">Jun 2022 - May 2024</p>
-            <p class="pt-3 pb-6 text-lg text-black max-w-prose">
-              Provided excellent customer service to the greater Cache Valley
-              area. Was part of the 5am Clean-up Crew, cleaned and prepared the
-              store for opening before heading to 10:30am classes.
-            </p>
-          </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year">2026</span> Joe Brijs</span>
+        <div class="footer-links">
+          <a href="https://github.com/jbrijs" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/joe-brijs/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="docs/assets/Portfolio_Resume.pdf" target="_blank" rel="noopener">Resume</a>
         </div>
       </div>
-    </section>
-    <section
-      class="sm:px-24 sm:pt-20 p-10 h-auto bg-gray-800 flex flex-col items-center"
-      id="contact"
-    >
-      <h1 class="text-2xl sm:text-3xl text-white pb-6 pt-10">
-        Lets get in touch:
-      </h1>
-      <div class="flex flex-row pt-20 gap-4">
-        <a href="https://www.linkedin.com/in/joe-brijs/" target="_blank">
-          <i class="devicon-linkedin-plain text-5xl text-white"></i>
-        </a>
-        <a href="https://github.com/jbrijs" target="_blank">
-          <i class="devicon-github-original text-5xl text-white"></i>
-        </a>
-        <a
-          class="bg-white px-4 rounded-lg w-auto text-gray-800 flex items-center font-semibold text-md"
-          href="./docs/assets/Portfolio_Resume.pdf"
-          target="_blank"
-          >Resume<span class="material-symbols-outlined"> download </span></a
-        >
-      </div>
-    </section>
+    </footer>
   </body>
 </html>
