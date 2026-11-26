@@ -505,27 +505,6 @@ a {
   font-size: 18px;
 }
 
-.toolkit h3 {
-  font-family: var(--mono);
-  font-size: 12.5px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-  font-weight: 400;
-  margin: 0 0 14px;
-}
-
-.toolkit .tags {
-  margin-bottom: 32px;
-}
-
-.toolkit .tag {
-  background: var(--bg);
-  border-color: var(--line);
-  font-size: 14px;
-  padding: 6px 13px;
-}
-
 /* ---------- Contact ---------- */
 .contact {
   background: var(--surface);
@@ -884,8 +863,24 @@ a {
   color: var(--accent-ink);
 }
 
-.toolkit {
-  margin-top: 32px;
+.more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 28px;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.more-link svg {
+  width: 13px;
+  height: 13px;
+  transition: transform 0.2s ease;
+}
+
+.more-link:hover svg {
+  transform: translate(2px, -2px);
 }
 
 /* ---------- Hero byline ---------- */
